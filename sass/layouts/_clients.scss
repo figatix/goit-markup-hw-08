@@ -1,0 +1,53 @@
+.clients {
+  text-align: center;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.clients__item {
+  width: 100%;
+  height: 92px;
+
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - var(--gap)) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * var(--gap)) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 5 * var(--gap)) / 6);
+  }
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--client-color);
+  border-radius: 4px;
+
+  color: var(--client-color);
+
+  transition: color 250ms var(--time-func), border 250ms var(--time-func);
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+    border: 1px solid var(--accent);
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
+/* ============ /CLIENTS ================ */

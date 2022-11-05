@@ -1,0 +1,210 @@
+/* ================= FORM ========================= */
+
+.modal-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+.modal-items-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--p-color);
+
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin: 0;
+
+  transition: border var(--transition-dur-and-func);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent);
+  }
+
+  .modal-items-container:hover & {
+    border: 1px solid var(--accent);
+  }
+}
+
+.modal-input-wrapper {
+  position: relative;
+}
+
+.user-name-icon,
+.user-tel-icon,
+.user-mail-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill var(--transition-dur-and-func);
+
+  .modal-input:focus + &,
+  .modal-input:focus + &,
+  .modal-input:focus + & {
+    fill: var(--accent);
+  }
+
+  .modal-items-container:hover &,
+  .modal-items-container:hover &,
+  .modal-items-container:hover & {
+    fill: var(--accent);
+  }
+}
+
+/* ================================================= */
+.comment-area {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  height: 120px;
+
+  transition: border var(--transition-dur-and-func);
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent);
+  }
+
+  .modal-items-container:hover & {
+    border: 1px solid var(--accent);
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+.comment-container {
+  margin-bottom: 20px;
+}
+
+/* ============================================= */
+.policy-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 12px;
+  margin-bottom: 30px;
+}
+
+.policy-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.policy-text {
+  letter-spacing: 0.03em;
+  color: var(--p-color);
+  font-size: 12px;
+  line-height: 1.67;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.policy-text-accent {
+  text-decoration-line: underline;
+  color: var(--accent);
+}
+
+.policy-checkbox-svg {
+  display: block;
+  border: 2px solid var(--h-color);
+  border-radius: 2px;
+  background-color: transparent;
+
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
+
+  .policy-checkbox:checked + & {
+    background-color: var(--accent);
+    border: 2px solid transparent;
+  }
+
+  .policy-checkbox:focus + & {
+    border: 2px solid var(--accent);
+  }
+
+  .policy-label:hover & {
+    border: 2px solid var(--accent);
+  }
+}
+
+.policy-checkbox-svg-icon {
+  display: block;
+  fill: var(--bgd-color);
+  opacity: 0;
+
+  transition: opacity var(--transition-dur-and-func);
+
+  .policy-checkbox:checked + .policy-checkbox-svg & {
+    opacity: 1;
+  }
+}
+
+/* ..........Custom checkbox with Pseudo .............. */
+
+/* .policy-text::before {
+  content: '';
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid var(--h-color);
+  border-radius: 2px;
+  background-color: transparent;
+  background-image: url('../images/svg/modal-check-icon.svg');
+  background-origin: border-box;
+
+  transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func);
+
+}
+.policy-checkbox:checked ~ .policy-text::before {
+  background-color: var(--accent);
+  border: 2px solid transparent;
+}
+
+.policy-label:hover .policy-text::before,
+.policy-checkbox:focus+.policy-text::before {
+  border: 2px solid var(--accent);
+} */
+
+/* ..........Custom checkbox with Pseudo .............. */

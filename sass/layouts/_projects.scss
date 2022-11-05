@@ -1,0 +1,79 @@
+/* ================== PROJECTS =================*/
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.project-item {
+  flex-basis: calc((100% - var(--gap) * 2) / 3);
+  background: var(--bgd-color);
+}
+
+.project-item > a {
+  display: block;
+  transition: box-shadow 250ms var(--time-func);
+
+  .project-item > &:hover,
+  .project-item > &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project-image-thumb {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.project-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--bgd-color);
+
+  transform: translate(0, 100%);
+  transition: transform 250ms var(--time-func);
+
+  .project-item > a:hover &,
+  .project-item > a:focus & {
+    transform: translate(0px, 0px);
+  }
+}
+
+.project-content {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.projects-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--h-color);
+
+  margin-bottom: 4px;
+}
+
+.projects-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--p-color);
+}

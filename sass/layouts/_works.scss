@@ -1,0 +1,40 @@
+.work {
+  padding-top: 47px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: var(--gap);
+  row-gap: var(--gap);
+}
+
+.work__item {
+  position: relative;
+
+  flex-basis: calc((100% - 2 * var(--gap)) / 3);
+}
+
+.work__desc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--bgd-color);
+}

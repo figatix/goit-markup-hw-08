@@ -1,0 +1,81 @@
+/* ================ Emailing ================= */
+
+.emailing-form {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+
+.emailing-form__title {
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  color: var(--bgd-color);
+}
+
+.emailing-form__input-container {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.emailing-form__input {
+  width: 450px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--bgd-color);
+  padding: 15px 16px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
+  // @media screen and (min-width: 480px) and (max-width: 1199px) {
+  //   width: 450px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.emailing-icon {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* ================ Emailing ================= */

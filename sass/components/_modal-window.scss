@@ -1,0 +1,109 @@
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 450px;
+  padding: 40px;
+
+  background-color: var(--bgd-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform 250ms var(--time-func), opacity 250ms var(--time-func);
+
+  .modal-backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  @media screen and (max-width: 479px) {
+    width: calc(100% - var(--gap));
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: border var(--transition-dur-and-func);
+}
+
+.modal-close-btn-svg {
+  display: block;
+  fill: #000000;
+
+  transition: fill var(--transition-dur-and-func);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent);
+  }
+}
+
+// ==================================
+
+// .modal-window {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%) scale(1);
+//   min-width: 528px;
+//   padding: 40px;
+
+//   background-color: var(--bgd-color);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+
+//   transition: transform 250ms var(--time-func), opacity 250ms var(--time-func);
+
+//   .modal-backdrop.is-hidden & {
+//     transform: translate(-50%, -50%) scale(1.1);
+//   }
+// }
+
+// .modal-close-btn {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   width: 30px;
+//   height: 30px;
+//   padding: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   background-color: transparent;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+
+//   transition: border var(--transition-dur-and-func);
+// }
+
+// .modal-close-btn-svg {
+//   display: block;
+//   fill: #000000;
+
+//   transition: fill var(--transition-dur-and-func);
+
+//   .modal-close-btn:hover &,
+//   .modal-close-btn:focus & {
+//     fill: var(--accent);
+//   }
+// }

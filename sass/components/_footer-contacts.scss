@@ -1,0 +1,36 @@
+.footer__contacts {
+  width: 232px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.address__item {
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 0.03em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__map-link {
+  font-style: normal;
+  color: var(--bgd-color);
+}
+
+.address__footer-link {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--time-func);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}

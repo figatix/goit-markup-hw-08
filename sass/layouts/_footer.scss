@@ -1,0 +1,27 @@
+/* =================== FOOTER ================= */
+
+.footer {
+  background-color: var(--footer-color);
+
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 0;
+    text-align: start;
+  }
+}

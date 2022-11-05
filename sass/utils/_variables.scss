@@ -1,0 +1,20 @@
+/* Змінні */
+
+:root {
+  /* colors */
+
+  --footer-color: #2f303a;
+  --accent: #2196f3;
+  --h-color: #212121;
+  --p-color: #757575;
+  --bgd-color: #ffffff;
+  --filter-color: #f5f4fa;
+  --background-hero: #c4c4c4;
+  --client-color: #afb1b8;
+  --font-main: "Roboto", sans-serif;
+  --font-logo: "Raleway", sans-serif;
+  --margin-card: 30px;
+  --gap: 30px;
+  --time-func: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
