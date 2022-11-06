@@ -26,10 +26,10 @@
       
             <ul class="nav">
               <li>
-                <a href="./index.html" class="nav__link nav__link--current">Студія</a>
+                <a href="./index.html" class="nav__link ">Студія</a>
               </li>
               <li>
-                <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+                <a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
               </li>
               <li><a href="./index.html" class="nav__link">Контакти</a></li>
             </ul>
@@ -144,7 +144,7 @@
   <main>
 
     <section class="projects-section section">
-      <div class="container">
+      <div class="container ">
         <h1 class="visually-hidden">Наші роботи</h1>
         
 
@@ -176,7 +176,21 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card1.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio-webp/desk-prjct-card1.webp 1x, ./images/portfolio-webp/desk-prjct-card1@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card1.jpg 1x, ./images/portfolio-img/desk-prjct-card1@2x.jpg 2x">
+
+                  <source media="(min-width: 768px)" srcset="./images/portfolio-webp/tab-prjct-card1.webp 1x, ./images/portfolio-webp/tab-prjct-card1@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card1.jpg 1x, ./images/portfolio-img/tab-prjct-card1@2x.jpg 2x">
+
+                  <source media="(max-width: 767.5px)" srcset="./images/portfolio-webp/mob-prjct-card1.webp 1x, ./images/portfolio-webp/mob-prjct-card1@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767.5px)" srcset="./images/portfolio-img/mob-prjct-card1.jpg 1x, ./images/portfolio-img/mob-prjct-card1@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card1.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -190,7 +204,29 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card2.jpg" alt="two basketball players" width="370">
+                <picture>
+
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card2.webp 1x, ./images/portfolio-webp/desk-prjct-card2@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card2.jpg 1x, ./images/portfolio-img/desk-prjct-card2@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card2.webp 1x, ./images/portfolio-webp/tab-prjct-card2@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card2.jpg 1x, ./images/portfolio-img/tab-prjct-card2@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card2.webp 1x, ./images/portfolio-webp/mob-prjct-card2@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card2.jpg 1x, ./images/portfolio-img/mob-prjct-card2@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card2.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -205,7 +241,28 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card3.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card3.webp 1x, ./images/portfolio-webp/desk-prjct-card3@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card3.jpg 1x, ./images/portfolio-img/desk-prjct-card3@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card3.webp 1x, ./images/portfolio-webp/tab-prjct-card3@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card3.jpg 1x, ./images/portfolio-img/tab-prjct-card3@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card3.webp 1x, ./images/portfolio-webp/mob-prjct-card3@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card3.jpg 1x, ./images/portfolio-img/mob-prjct-card3@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card3.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -219,7 +276,28 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card4.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card4.webp 1x, ./images/portfolio-webp/desk-prjct-card4@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card4.jpg 1x, ./images/portfolio-img/desk-prjct-card4@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card4.webp 1x, ./images/portfolio-webp/tab-prjct-card4@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card4.jpg 1x, ./images/portfolio-img/tab-prjct-card4@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card4.webp 1x, ./images/portfolio-webp/mob-prjct-card4@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card4.jpg 1x, ./images/portfolio-img/mob-prjct-card4@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card4.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="project-content">
@@ -232,7 +310,28 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card5.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card5.webp 1x, ./images/portfolio-webp/desk-prjct-card5@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card5.jpg 1x, ./images/portfolio-img/desk-prjct-card5@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card5.webp 1x, ./images/portfolio-webp/tab-prjct-card5@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card5.jpg 1x, ./images/portfolio-img/tab-prjct-card5@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card5.webp 1x, ./images/portfolio-webp/mob-prjct-card5@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card5.jpg 1x, ./images/portfolio-img/mob-prjct-card5@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card5.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="project-content">
@@ -245,7 +344,28 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card6.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card6.webp 1x, ./images/portfolio-webp/desk-prjct-card6@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card6.jpg 1x, ./images/portfolio-img/desk-prjct-card6@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card6.webp 1x, ./images/portfolio-webp/tab-prjct-card6@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card6.jpg 1x, ./images/portfolio-img/tab-prjct-card6@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card6.webp 1x, ./images/portfolio-webp/mob-prjct-card6@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card6.jpg 1x, ./images/portfolio-img/mob-prjct-card6@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card6.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -259,7 +379,28 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card7.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card7.webp 1x, ./images/portfolio-webp/desk-prjct-card7@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card7.jpg 1x, ./images/portfolio-img/desk-prjct-card7@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card7.webp 1x, ./images/portfolio-webp/tab-prjct-card7@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card7.jpg 1x, ./images/portfolio-img/tab-prjct-card7@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card7.webp 1x, ./images/portfolio-webp/mob-prjct-card7@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card7.jpg 1x, ./images/portfolio-img/mob-prjct-card7@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card7.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -273,7 +414,28 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card8.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card8.webp 1x, ./images/portfolio-webp/desk-prjct-card8@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card8.jpg 1x, ./images/portfolio-img/desk-prjct-card8@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card8.webp 1x, ./images/portfolio-webp/tab-prjct-card8@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card8.jpg 1x, ./images/portfolio-img/tab-prjct-card8@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card8.webp 1x, ./images/portfolio-webp/mob-prjct-card8@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card8.jpg 1x, ./images/portfolio-img/mob-prjct-card8@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card8.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -287,7 +449,28 @@
           <li class="project-item">
             <a href="./portfolio.html">
               <div class="project-image-thumb">
-                <img src="./images/portfolio-img/desk-prjct-card9.jpg" alt="two basketball players" width="370">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-webp/desk-prjct-card9.webp 1x, ./images/portfolio-webp/desk-prjct-card9@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio-img/desk-prjct-card9.jpg 1x, ./images/portfolio-img/desk-prjct-card9@2x.jpg 2x">
+                  
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-webp/tab-prjct-card9.webp 1x, ./images/portfolio-webp/tab-prjct-card9@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio-img/tab-prjct-card9.jpg 1x, ./images/portfolio-img/tab-prjct-card9@2x.jpg 2x">
+                  
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-webp/mob-prjct-card9.webp 1x, ./images/portfolio-webp/mob-prjct-card9@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 767.5px)"
+                    srcset="./images/portfolio-img/mob-prjct-card9.jpg 1x, ./images/portfolio-img/mob-prjct-card9@2x.jpg 2x">
+
+                  <img class="project__img" src="./images/portfolio-webp/mob-prjct-card9.webp" alt="two basketball players">
+                </picture>
+                
                 <p class="project-img-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>

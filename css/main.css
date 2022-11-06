@@ -556,11 +556,22 @@ body {
 /* ======================== FILTER =============*/
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 8px;
-  row-gap: 8px;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn {
@@ -986,7 +997,7 @@ body {
     background-size: cover, 1600px;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767.5px), screen and (min-resolution: 192dpi) and (max-width: 767.5px), screen and (min-resolution: 2dppx) and (max-width: 767.5px) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgrounds/mobile-bgd@2x.jpg");
   }
@@ -1311,20 +1322,40 @@ body {
   }
 }
 
-/* ================== PROJECTS =================*/
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
 }
 
 .project-item {
-  flex-basis: calc((100% - var(--gap) * 2) / 3);
   background: var(--bgd-color);
+}
+.project-item:not(:last-child) {
+  margin-bottom: var(--gap);
+}
+@media screen and (min-width: 768px) {
+  .project-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-item {
+    flex-basis: calc((100% - var(--gap)) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-item {
+    flex-basis: calc((100% - var(--gap) * 2) / 3);
+  }
 }
 
 .project-item > a {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--time-func);
 }
 .project-item > .project-item > a:hover, .project-item > .project-item > a:focus {
@@ -1336,12 +1367,17 @@ body {
   overflow: hidden;
 }
 
+.project__img {
+  width: 100%;
+}
+
 .project-img-overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
@@ -1350,7 +1386,7 @@ body {
   letter-spacing: 0.03em;
   background: rgba(33, 150, 243, 0.9);
   color: var(--bgd-color);
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   transition: transform 250ms var(--time-func);
 }
 .project-item > a:hover .project-img-overlay, .project-item > a:focus .project-img-overlay {
@@ -1358,6 +1394,7 @@ body {
 }
 
 .project-content {
+  flex-grow: 1;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
@@ -1378,6 +1415,7 @@ body {
   color: var(--p-color);
 }
 
+/* ================== PROJECTS =================*/
 .modal-backdrop {
   position: fixed;
   width: 100%;

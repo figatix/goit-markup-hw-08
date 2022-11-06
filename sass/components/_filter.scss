@@ -2,12 +2,21 @@
 
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 8px;
-  row-gap: 8px;
+  row-gap: 15px;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn {
@@ -39,3 +48,15 @@
     cursor: pointer;
   }
 }
+
+// ==============================
+
+// .filter {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   column-gap: 8px;
+//   row-gap: 8px;
+
+//   margin-bottom: 50px;
+// }

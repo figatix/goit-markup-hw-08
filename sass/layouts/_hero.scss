@@ -21,9 +21,9 @@
 
   // =======media for background ========
   // mobile
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767.5px),
+    screen and (min-resolution: 192dpi) and (max-width: 767.5px),
+    screen and (min-resolution: 2dppx) and (max-width: 767.5px) {
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
